@@ -10,5 +10,19 @@ public class Attack{
         teacher = teacherNeu;
         damage = damageNeu;
     }
-   
+    private void changename(String changedname) {
+        name = changedname;
+    }
+
+    private void changeSubject(String changedSubject) {
+        subject = changedSubject;
+    }
+
+    private void changeteacher(boolean changedteacher) {
+        isWeapon = changedteacher;
+    }
+
+    private void changeDamage(int changedDamage) {
+        damage = changedDamage;
+    }
 }
