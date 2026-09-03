@@ -1,0 +1,75 @@
+Räume
+Normale Räume
+- 101
+- 102
+- 103
+- 104
+- 105
+- 106
+- 107
+- 109
+- 110
+- 111
+- 112
+- 113
+- 201
+- 202
+
+Nawiräume
+- 203
+- 204
+- 205
+- 207 (Fachraum)
+- 209 (Fachraum)
+- 210
+- 211
+- 212
+- 213
+- 303 (Fachraum)
+- 304 (Fachraum)
+- 305 (Fachraum)
+- 306 (Fachraum) 
+
+Informatikräume
+- 002
+- 003
+- 004
+- 005 
+
+Musik/Kunst Räume:
+- 301
+- 302
+- 310
+- 311
+- 312
+- 401
+
+
+Vorbereitungsräume
+- 108
+- 114
+- 206
+- 208
+- 214
+- 313  
+Klassenräume
+- 006
+- 014  
+Toiletten
+- 001.1 (Mädchen)
+- 001.2 (Jungen)
+- 115 (Mädchen)
+- 215 (Unisex)
+- 314 (Jungen)
+
+
+Spezielle Räume:
+- 007 (Hausmeister)
+- 008 (Oberstuffenkoordination)
+- 009 (Schulleitung)
+- 010 (Sekretariat)
+- 011 (Stellvertretende Schulleitung / Gesammtschülervertretung)
+- 012/013 (Lehrerzimmer (ein Raum zwei Türen))
+- 307 (Technik)
+- 308 (Aula)
+- 309 (KI-Raum / Aufnahmeraum)
