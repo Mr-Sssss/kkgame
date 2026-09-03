@@ -254,7 +254,7 @@ public class Attack{
     public String teacher;
     public int damage;
     
-    public Student(String nameNeu, String subjectNeu, String teacherNeu, int damageNeu){
+    public Attack(String nameNeu, String subjectNeu, String teacherNeu, int damageNeu){
         name = nameNeu;
         subject = subjectNeu;
         teacher = teacherNeu;
