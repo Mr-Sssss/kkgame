@@ -276,3 +276,7 @@ public class Attack{
         damage = changedDamage;
     }
 }
+
+public static void main(String[] args){
+
+}

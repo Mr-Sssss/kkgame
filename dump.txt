@@ -73,3 +73,9 @@ Spezielle Räume:
 - 307 (Technik)
 - 308 (Aula)
 - 309 (KI-Raum / Aufnahmeraum)
+
+
+Wir müssen im Informatik LK Q1 ein kleines Textadventure in Java programmieren.
+
+Unsere Idee wäre es eine kleine Simulation von unserer Schule zu machen mit einer eingebauten Story. Man spielt als ein Schüler, den man am Anfang Customizen kann (Name, Geschlecht, usw…) . Das Spiel beinhaltet Kapitel, wo jedes Kapitel ein Tag entspricht, also von Montag bis Freitag.  Es soll leicht Combat mäßig aufgebaut sein. D.H man hat Leben, ein Inventar, Waffen, usw…  Grundidee der Story: Man bekommt eine E-Mail von der Schule, dass ein neuer Schulleiterin auf der Schule ist, warum es so ist findet man nicht raus.  Man selber spielt als ein ganz normaler Schüler und man muss simple Aufgaben erledigen am Anfang, z.B. 5 Bücher sammeln, Tafel wischen, gespräch mit Lehrer haben, usw…. Dann fällt einem auf, dass sich die Lehrer anfangen komisch zu benehmen. Auch will absolut niemand darüber reden warum die alte Schulleiterin nicht mehr an der Schule ist. Irgentwann fällt einem etwas auf, dass die Lehrer zu etwas mutieren. Jeden Tag wird es schlimmer und schlimmer, bis man rausfindet, dass die zwei besten Mathelehrer (das sind die einzigen zwei Lehrer die  
+Insgesammt gibt es 5 verschiedene Stile: Mathematisch, Sprachlich, Geselschaftswissenschaftlich, Wissenschaftlich und Sportlich.  Mit jedem Spielstil
