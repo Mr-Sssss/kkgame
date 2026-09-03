@@ -77,5 +77,15 @@ Spezielle Räume:
 
 Wir müssen im Informatik LK Q1 ein kleines Textadventure in Java programmieren.
 
-Unsere Idee wäre es eine kleine Simulation von unserer Schule zu machen mit einer eingebauten Story. Man spielt als ein Schüler, den man am Anfang Customizen kann (Name, Geschlecht, usw…) . Das Spiel beinhaltet Kapitel, wo jedes Kapitel ein Tag entspricht, also von Montag bis Freitag.  Es soll leicht Combat mäßig aufgebaut sein. D.H man hat Leben, ein Inventar, Waffen, usw…  Grundidee der Story: Man bekommt eine E-Mail von der Schule, dass ein neuer Schulleiterin auf der Schule ist, warum es so ist findet man nicht raus.  Man selber spielt als ein ganz normaler Schüler und man muss simple Aufgaben erledigen am Anfang, z.B. 5 Bücher sammeln, Tafel wischen, gespräch mit Lehrer haben, usw…. Dann fällt einem auf, dass sich die Lehrer anfangen komisch zu benehmen. Auch will absolut niemand darüber reden warum die alte Schulleiterin nicht mehr an der Schule ist. Irgentwann fällt einem etwas auf, dass die Lehrer zu etwas mutieren. Jeden Tag wird es schlimmer und schlimmer, bis man rausfindet, dass die zwei besten Mathelehrer (das sind die einzigen zwei Lehrer die  
-Insgesammt gibt es 5 verschiedene Stile: Mathematisch, Sprachlich, Geselschaftswissenschaftlich, Wissenschaftlich und Sportlich.  Mit jedem Spielstil
+Unsere Idee wäre es eine kleine Simulation von unserer Schule zu machen mit einer eingebauten Story. 
+Man spielt als ein Schüler, den man am Anfang Customizen kann (Name, Geschlecht, usw…) . Das Spiel beinhaltet Kapitel, wo jedes Kapitel ein Tag entspricht, 
+also von Montag bis Freitag.  Es soll leicht Combat mäßig aufgebaut sein. D.H man hat Leben, ein Inventar, Waffen, usw…  Grundidee der Story: 
+Man bekommt eine E-Mail von der Schule, dass ein neuer Schulleiterin auf der Schule ist, warum es so ist findet man nicht raus.  
+Man selber spielt als ein ganz normaler Schüler und man muss simple und schwere Aufgaben erledigen am Anfang, z.B. 5 Bücher sammeln, 
+Tafel wischen, Tests von Lehrern klauen, usw…. Dann fällt einem auf, dass sich die Lehrer anfangen komisch zu benehmen. 
+Auch will absolut niemand darüber reden warum die alte Schulleiterin nicht mehr an der Schule ist. Irgentwann fällt einem etwas auf, 
+dass die Lehrer sich verändern. Jeden Tag wird es schlimmer und schlimmer, bis man rausfindet, dass die Lehrer vom Schliemann Gymnasium zum Bösen maipuliert werden. 
+Schließe Quests ab, bekämpfe die Lehrer und rette das KKG, indem du die stärksten aller Lehrer in die Knie zwingst! Der Löwe wartet in seiner Höhle auf dich. 
+(Bosse: Herr Kreutel, Herr Löwe_X_Herr Scharlau, Herr Dembny, Herr Linke, Frau Berger, Herr Kopp, Frau Kliefort) 
+Insgesamt gibt es 5 verschiedene Stile: Mathematisch, Sprachlich, Geselschaftswissenschaftlich, Naturwissenschaftlich und Sportlich. 
+Mit jedem Spielstil kommen Vor- und Nachteile zum Beispiel bei Quests und Kämpfen. Sport --> Mathe --> Sprachen --> GeWi --> NaWi --> Sport
