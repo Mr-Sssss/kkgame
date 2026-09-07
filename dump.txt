@@ -86,6 +86,6 @@ Tafel wischen, Tests von Lehrern klauen, usw…. Dann fällt einem auf, dass s
 Auch will absolut niemand darüber reden warum die alte Schulleiterin nicht mehr an der Schule ist. Irgentwann fällt einem etwas auf, 
 dass die Lehrer sich verändern. Jeden Tag wird es schlimmer und schlimmer, bis man rausfindet, dass die Lehrer vom Schliemann Gymnasium zum Bösen maipuliert werden. 
 Schließe Quests ab, bekämpfe die Lehrer und rette das KKG, indem du die stärksten aller Lehrer in die Knie zwingst! Der Löwe wartet in seiner Höhle auf dich. 
-(Bosse: Herr Kreutel, Herr Löwe_X_Herr Scharlau, Herr Dembny, Herr Linke, Frau Berger, Herr Kopp, Frau Kliefort) 
+(Bosse: Herr Kreutel, Herr Löwe_X_Herr Scharlau, Herr Dembny, Herr Linke, Frau Berger, Herr Kopp, Frau Kliefoth) 
 Insgesamt gibt es 5 verschiedene Stile: Mathematisch, Sprachlich, Geselschaftswissenschaftlich, Naturwissenschaftlich und Sportlich. 
 Mit jedem Spielstil kommen Vor- und Nachteile zum Beispiel bei Quests und Kämpfen. Sport --> Mathe --> Sprachen --> GeWi --> NaWi --> Sport
