@@ -8,10 +8,10 @@
     public String[] items;
     public int level;
     public String inFightWith;
-    public String currentFloor;
-    public String currentRoom;
+    public int currentFloor;
+    public int currentRoom;
 
-    public Character(String newName, String newSex, String newDescription, String newSubject, int newHealth, int newInventorySpace, int newLevel, String newInFightWith, String newCurrentRoom){
+    public Character(String newName, String newSex, String newDescription, String newSubject, int newHealth, int newInventorySpace, int newLevel, String newInFightWith, int newCurrentRoom, int newCurrentFloor){
         name = newName;
         sex = newSex;
         description = newDescription;
@@ -21,6 +21,7 @@
         level = newLevel;
         inFightWith = newInFightWith;
         currentRoom = newCurrentRoom;
+        currentFloor = newCurrentFloor;
     }
 
     private void changeName(String changedName){ name = changedName; }
@@ -39,9 +40,9 @@
 
     private void changeInFightWith(String changedInFightWith){ inFightWith = changedInFightWith; }
 
-    private void changeCurrentFloor(String changedCurrentFloor){ currentRoom = changedCurrentFloor; }
+    private void changeCurrentFloor(int changedCurrentFloor){ currentRoom = changedCurrentFloor; }
 
-    private void changeCurrentRoom(String changedCurrentRoom){ currentRoom = changedCurrentRoom; }
+    private void changeCurrentRoom(int changedCurrentRoom){ currentRoom = changedCurrentRoom; }
 
     public void use(){
 
@@ -114,11 +115,79 @@
 
     }
 
+  public class Floor{
+      public int Number;
+      public String Description;
+
+      public Floor(String newDescription, int newNumber){
+          description = newDescription;
+          number = newNumber;
+
+      public void changeDescription(String changedDescription) {
+          description = changedDescription;
+      }
+      
+      public void changeNumber(int changedNumber) {
+          number = changedNumber;
+      }
+  }
+
+    public class Room{
+      public String description;
+      public int number;
+      public int floor;
+      public boolean isFachraum;
+      public boolean locked;
+      public boolean bossroom;
+
+      public Room(String newDescription, int newNumber, int newFloor, boolean newIsFachraum, boolean newLocked, boolean newBossroom){
+          description = newDescription;
+          number = newNumber;
+          floor = newFloor;
+          isFachraum = newIsFachraum;
+          locked = newLocked;
+          bossroom = newBossroom;
+      ]
+      
+      
+      public void changeDescription(String changedDescription) {
+          description = changedDescription;
+      }
+      
+      public void changeNumber(int changedNumber) {
+          number = changedNumber;
+      }
+      
+      public void changeFloor(int changedFloor) {
+          floor = changedFloor;
+      }
+      
+      public void changeIsFachraum(boolean changedIsFachraum) {
+          isFachraum = changedIsFachraum;
+      }
+      
+      public void changeLocked(boolean changedLocked) {
+          locked = changedLocked;
+      }
+      
+      public void changeBossroom(boolean changedBossroom) {
+          bossroom = changedBossroom;
+      }
+      
+      public void inFloor() {
+      }
+      
+      public void interactStudent(String student) {
+      }
+      
+      public void interactTeacher(String teacher) {
+      }
+      
+}
+
 public static class Item{
     public String name;
     public String subject;
-    public boolean isWeapon;
-    public int damage;
     public int level;
     public static boolean inSight;
 
@@ -141,7 +210,62 @@ public static class Item{
 
     private void changeLevel(int changedLevel) { level = changedLevel; }
 
+    public void use(String name){
+     
+    }
+
 }
+
+public class Teacher{
+    public String name;
+    public String subject;
+    public String description;
+    public int health;
+    public int strictness;
+    public String attack;
+    public int level;
+
+    public Teacher(String newName, String newSubject, String newDescription, int newHealth, int newStrictness, String newAttack, int newLevel){
+        name = newName;
+        subject = newSubject;
+        description = newDescription;
+        health = newHealth;
+        strictness = newStrictness;
+        attack = newAttack;
+        level = newLevel;
+        
+    }
+    
+    private void changeName (String changedName){
+      name = changedName;
+      }
+      
+    public void changeSubject(String changedSubject) {
+        subject = changedSubject;
+    }
+    
+    public void changeDescription(String changedDescription) {
+        description = changedDescription;
+    }
+    
+    public void changeAttack(String changedAttack) {
+        attack = changedAttack;
+    }
+    
+    public void changeHealth(int changedHealth) {
+        health = changedHealth;
+    }
+    
+    public void changeStrictness(int changedStrictness) {
+        strictness = changedStrictness;
+    }
+    
+    public void changeLevel(int changedLevel) {
+        level = changedLevel;
+    }
+    
+  }
+    
 
 public static class Student{
     public String name;
@@ -165,18 +289,25 @@ public static class Student{
     private void changeDescription (String changedDescription){ name = changedDescription; }
 }
 
-public static class Attack{
+public static class Weapon{
     public String name;
     public String subject;
-    public String teacher;
+    public String description;
     public int damage;
 
-    public Attack(String nameNeu, String subjectNeu, String teacherNeu, int damageNeu){
-        name = nameNeu;
-        subject = subjectNeu;
-        teacher = teacherNeu;
-        damage = damageNeu;
+    public Attack(String newName, String newSubject, String newDescription, int newDamage){
+        name = newName;
+        subject = newSubject;
+        teacher = newDescription;
+        damage = newDamage;
     }
+    private void changeName (String changedName){ name = changedName;}
+
+    private void changeDamage (String changedDamage){ year = changedDamage;}
+
+    private void changeSubject (String changedSubject){ name = changedSubject; }
+
+    private void changeDescription (String changedDescription){ name = changedDescription; }
 
 }}
 /*public static void main(String[] args) {
