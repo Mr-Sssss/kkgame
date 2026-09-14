@@ -1,4 +1,4 @@
-public class Character{
+ public static class Character{
     public String name;
     public String sex;
     public String description;
@@ -8,8 +8,10 @@ public class Character{
     public String[] items;
     public int level;
     public String inFightWith;
+    public String currentFloor;
+    public String currentRoom;
 
-    public Character(String newName, String newSex, String newDescription, String newSubject, int newHealth, int newInventorySpace, int newLevel, String newInFightWith){
+    public Character(String newName, String newSex, String newDescription, String newSubject, int newHealth, int newInventorySpace, int newLevel, String newInFightWith, String newCurrentRoom){
         name = newName;
         sex = newSex;
         description = newDescription;
@@ -17,266 +19,166 @@ public class Character{
         health = newHealth;
         inventorySpace = newInventorySpace;
         level = newLevel;
-        inFightWith = newInFightWith; 
-    }
-    
-    private changeName(String changedName){
-        name = changedName;
+        inFightWith = newInFightWith;
+        currentRoom = newCurrentRoom;
     }
 
-    private changeSex(String changedSex){
-        sex = changedSex;
-    }
+    private void changeName(String changedName){ name = changedName; }
 
-    private changeDescription(String changedDescription){
-        description = changedDescription;
-    }
+    private void changeSex(String changedSex){ sex = changedSex; }
 
-    private changeSubject(String changedSubject){
-        subject = changedSubjec;t
-    }
+    private void changeDescription(String changedDescription){ description = changedDescription; }
 
-    private changeHealth(int changedHealth){
-        health = changedHealth;
-    }
+    private void changeSubject(String changedSubject){ subject = changedSubject; }
 
-    private changenventorySpace(int changedInventorySpace){
-        inventorySpace = changedInventorySpace;
-    }
+    private void changeHealth(int changedHealth){ health = changedHealth; }
 
-    private changeLevel(int changedLevel){
-        level = changedLevel;
-    }
+    private void changeInventorySpace(int changedInventorySpace){ inventorySpace = changedInventorySpace; }
 
-    private changeInFightWith(String changedInFightWith){
-        inFightWith = changedInFightWith;
-    }
+    private void changeLevel(int changedLevel){ level = changedLevel; }
 
-    public use(item){
+    private void changeInFightWith(String changedInFightWith){ inFightWith = changedInFightWith; }
+
+    private void changeCurrentFloor(String changedCurrentFloor){ currentRoom = changedCurrentFloor; }
+
+    private void changeCurrentRoom(String changedCurrentRoom){ currentRoom = changedCurrentRoom; }
+
+    public void use(){
 
     }
 
-    public pickUp(item){
-        if item.inSight {
-            items
+    public void pickUp(){
+
+    }
+
+    public void attack(String item){
+
+    }
+
+    public void moveTo(int floor){
+        if (floor == currentFloor){
+            System.out.print("Broski du bist schon hier.");
+        } else {
+            changeCurrentFloor("floor");
+            changeCurrenRoom("");
+            if (floor == 0){
+                System.out.print("Du bist jetzt im Erdgeschoss");
+            } else if (floor == 1){
+                System.out.print("Du bist jetzt im 1. Obergeschoss");
+            } else if (floor == 2){
+                System.out.print("Du bist jetzt im 2. Obergeschoss");
+            } else if (floor == 3){
+                System.out.print("Du bist jetzt im 3. Obergeschoss");
+            } else if (floor == 4){
+                System.out.print("Du kannst übers 3. Obergeschoss direkt in 401 reingehen.");
+            } else {
+                System.out.print("Was soll das den sein.");
+            }
         }
     }
 
-    public attack(String item){
+    public void enter(String room){
+        if (room == currentRoom){
+            System.out.print("Broski du bist schon hier.");
+        } else {
+            changeCurrenRoom(room);
+            if (floor == 0){
+
+            } else if (floor == 1){
+                if (Room == "115"){
+                    if (sex == "Female"){
+                        changeCurrentRoom(room);
+                    } else if (sex == "Male"){
+                        System.out.print("Du bist kein Mädchen du kleiner Perversling.");
+                    }
+                }
+                
+            } else if (floor == 2){
+                if (Room == "215"){
+                    System.out.print("Bist du gay oder so. Aber okay");
+                }
+                
+            } else if (floor == 3){
+                if (Room == "314"){
+                    if (sex == "Male"){
+                        changeCurrentRoom(room);
+                    } else if (sex == "Female"){
+                        System.out.print("Schwänze kannst du dir auch auf P**nhub oder so angucken");
+                        System.out.print("Also bitte verpiss dich hier.");
+                    }        
+                }
+            }
+        }
+    }
+    public void exit(){
 
     }
 
-    public moveTo(int floor){
-
-    }
-
-    public enter(String room){
-
-    }
-
-    public exit(){
-
-    }
-}
-
-public class Item{
+public static class Item{
     public String name;
     public String subject;
     public boolean isWeapon;
     public int damage;
     public int level;
-    
-    public Item(String nameNeu, String subjectNeu, boolean isWeaponNeu, int damageNeu, int levelNeu){
-        name = nameNeu;
-        subject = subjectNeu;
-        isWeapon = isWeaponNeu;
-        damage = damageNeu;
-        level = levelNeu;
-    }
-    
-     private void changename(String changedname) {
-        name = changedname;
+    public static boolean inSight;
+
+    public Item(String newName, String newSubject, boolean newIsWeapon, int NewDamage, int NewLevel, boolean newInSight){
+        name = newName;
+        subject = newSubject;
+        isWeapon = newIsWeapon;
+        damage = NewDamage;
+        level = NewLevel;
+        inSight = newInSight;
     }
 
-    private void changeSubject(String changedSubject) {
-        subject = changedSubject;
-    }
+    private void changeName(String changedName) { name = changedName; }
 
-    private void changeIsWeapon(boolean changedIsWeapon) {
-        isWeapon = changedIsWeapon;
-    }
+    private void changeSubject(String changedSubject) { subject = changedSubject; }
 
-    private void changeDamage(int changedDamage) {
-        damage = changedDamage;
-    }
+    private void changeIsWeapon(boolean changedIsWeapon) { isWeapon = changedIsWeapon; }
 
-    private void changeLevel(int changedLevel) {
-        level = changedLevel;
-    }
-   
+    private void changeDamage(int changedDamage) { damage = changedDamage; }
+
+    private void changeLevel(int changedLevel) { level = changedLevel; }
+
 }
 
-public class Room{
-    public String description;
-    public int number;
-    public int floor;
-    public boolean isFloor;
-    public boolean isFachraum;
-    public boolean locked;
-    public boolean bossroom;
-
-    public Room(String descriptionNeu, int numberNeu, int floorNeu, boolean isFloorNeu, boolean isFachraumNeu, boolean lockedNeu, boolean bossroomNeu){
-        description = descriptionNeu;
-        number = numberNeu;
-        floor = floorNeu;
-        isFloor = isFloorNeu;
-        isFachraum = isFachraumNeu;
-        locked = lockedNeu;
-        bossroom = bossroomNeu;
-        
-        }
-        
-    public void changeDescription(String changedDescription) {
-        description = changedDescription;
-    }
-    
-    public void changeNumber(int changedNumber) {
-        number = changedNumber;
-    }
-    
-    public void changeFloor(int changedFloor) {
-        floor = changedFloor;
-    }
-    
-    public void changeIsFloor(boolean changedIsFloor) {
-        isFloor = changedIsFloor;
-    }
-    
-    public void changeIsFachraum(boolean changedIsFachraum) {
-        isFachraum = changedIsFachraum;
-    }
-    
-    public void changeLocked(boolean changedLocked) {
-        locked = changedLocked;
-    }
-    
-    public void changeBossroom(boolean changedBossroom) {
-        bossroom = changedBossroom;
-    }
-      
-
-        
-}
-
-public class Student{
+public static class Student{
     public String name;
     public String year;
     public String subject;
     public String description;
 
-    public Student(String nameNeu, String yearNeu, String subjectNeu, String descriptionNeu){
-        name = nameNeu;
-        year = yearNeu;
-        subject = subjectNeu;
-        description = descriptionNeu; 
+    public Student(String newName, String newYear, String newSubject, String newDescription){
+        name = newName;
+        year = newYear;
+        subject = newSubject;
+        description = newDescription;
     }
-   
-   private void changename (String changedname){
-     name = changedname;
-   }
-   
-   private void changeyear (String changedyear){
-     year = changedyear;
-   }
-   
-   private void changesubject (String changedsubject){
-     name = changedsubject;
-   }
-   
-   private void changedescription (String changeddescription){
-     name = changeddescription;
-   }
+
+    private void changeName (String changedName){ name = changedName;}
+
+    private void changeYear (String changedYear){ year = changedYear;}
+
+    private void changeSubject (String changedSubject){ name = changedSubject; }
+
+    private void changeDescription (String changedDescription){ name = changedDescription; }
 }
 
-public class Teacher{
-    public String name;
-    public String subject;
-    public String description;
-    public int health;
-    public int strictness;
-    public String attack;
-    public int level;
-
-    public Teacher(String nameNeu, String subjectNeu, String descriptionNeu, int healthNeu, int strictnessNeu, String attackNeu, int levelNeu){
-        name = nameNeu;
-        subject = subjectNeu;
-        description = descriptionNeu;
-        health = healthNeu;
-        strictness = strictnessNeu;
-        attack = attackNeu;
-        level = levelNeu;
-        
-    }
-    
-    private void changename (String changedname){
-      name = changedname;
-      }
-      
-    public void changeSubject(String changedSubject) {
-        subject = changedSubject;
-    }
-    
-    public void changeDescription(String changedDescription) {
-        description = changedDescription;
-    }
-    
-    public void changeAttack(String changedAttack) {
-        attack = changedAttack;
-    }
-    
-    public void changeHealth(int changedHealth) {
-        health = changedHealth;
-    }
-    
-    public void changeStrictness(int changedStrictness) {
-        strictness = changedStrictness;
-    }
-    
-    public void changeLevel(int changedLevel) {
-        level = changedLevel;
-    }
-    
-}
-
-public class Attack{
+public static class Attack{
     public String name;
     public String subject;
     public String teacher;
     public int damage;
-    
+
     public Attack(String nameNeu, String subjectNeu, String teacherNeu, int damageNeu){
         name = nameNeu;
         subject = subjectNeu;
         teacher = teacherNeu;
         damage = damageNeu;
     }
-    private void changename(String changedname) {
-        name = changedname;
-    }
 
-    private void changeSubject(String changedSubject) {
-        subject = changedSubject;
-    }
-
-    private void changeteacher(boolean changedteacher) {
-        isWeapon = changedteacher;
-    }
-
-    private void changeDamage(int changedDamage) {
-        damage = changedDamage;
-    }
-}
-
-public static void main(String[] args){
-
-}
+}}
+/*public static void main(String[] args) {
+    
+}*/
