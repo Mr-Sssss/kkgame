@@ -90,3 +90,7 @@ Schließe Quests ab, bekämpfe die Lehrer und rette das KKG, indem du die stärk
 (Bosse: Herr Kreutel, Herr Löwe_X_Herr Scharlau, Herr Dembny, Herr Linke, Frau Berger, Herr Kopp, Frau Kliefoth) 
 Insgesamt gibt es 5 verschiedene Stile: Mathematisch, Sprachlich, Geselschaftswissenschaftlich, Naturwissenschaftlich und Sportlich. 
 Mit jedem Spielstil kommen Vor- und Nachteile zum Beispiel bei Quests und Kämpfen. Sport --> Mathe --> Sprachen --> GeWi --> NaWi --> Sport
+
+Quests: 
+Tag 1: Bücher aus den einzelnen Fachräumen ausleihen. Sammle 7 Bücher. Diese liegen in 215 (Ethik), 401 (Kunst), 005 (Mathe), 208(Chemie), 308 (Aula)(Kolle), 113 (Deutsch), 301 (Physik). Bücher müssen im Lehrerzimmer abgegeben werden.
+Tag 2: Finde Frau Berger um deinen English Aufsatz abzugeben.
