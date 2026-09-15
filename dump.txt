@@ -73,6 +73,7 @@ Spezielle Räume:
 - 307 (Technik)
 - 308 (Aula)
 - 309 (KI-Raum / Aufnahmeraum)
+- 000 (Growkeller und Aquaponikanlage + Insektenterrarien)
 
 
 Wir müssen im Informatik LK Q1 ein kleines Textadventure in Java programmieren.
