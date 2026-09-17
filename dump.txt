@@ -75,6 +75,8 @@ Spezielle Räume:
 - 309 (KI-Raum / Aufnahmeraum)
 - 000 (Growkeller und Aquaponikanlage + Insektenterrarien)
 
+WÄHRUNG: Social (Time) Credits
+
 
 Wir müssen im Informatik LK Q1 ein kleines Textadventure in Java programmieren.
 
@@ -93,4 +95,6 @@ Mit jedem Spielstil kommen Vor- und Nachteile zum Beispiel bei Quests und Kämpf
 
 Quests: 
 Tag 1: Bücher aus den einzelnen Fachräumen ausleihen. Sammle 7 Bücher. Diese liegen in 215 (Ethik), 401 (Kunst), 005 (Mathe), 208(Chemie), 308 (Aula)(Kolle), 113 (Deutsch), 301 (Physik). Bücher müssen im Lehrerzimmer abgegeben werden.
-Tag 2: Finde Frau Berger um deinen English Aufsatz abzugeben.
+Tag 2: Finde Frau Berger um deinen English Aufsatz abzugeben. Frau Berger ist momentan dabei ihre 100.000 Schritte zu sammeln und deswegen irgendwo im Schulhaus unterwegs, die Location ist zufällig durchsuche deswegen alle Räume und Flure und gebe deinen Aufsatz ab.
+Tag 3: 
+
