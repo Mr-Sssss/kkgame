@@ -89,12 +89,18 @@ Tafel wischen, Tests von Lehrern klauen, usw…. Dann fällt einem auf, dass s
 Auch will absolut niemand darüber reden warum die alte Schulleiterin nicht mehr an der Schule ist. Irgentwann fällt einem etwas auf, 
 dass die Lehrer sich verändern. Jeden Tag wird es schlimmer und schlimmer, bis man rausfindet, dass die Lehrer vom Schliemann Gymnasium zum Bösen maipuliert werden. 
 Schließe Quests ab, bekämpfe die Lehrer und rette das KKG, indem du die stärksten aller Lehrer in die Knie zwingst! Der Löwe wartet in seiner Höhle auf dich. 
-(Bosse: Herr Kreutel, Herr Löwe_X_Herr Scharlau, Herr Dembny, Herr Linke, Frau Berger, Herr Kopp, Frau Kliefoth) 
+(Bosse: Herr Kreuter(Kreutel), Der Löwe(Herr), Herr Damny(Dembny), Herr Lunke(Linke), Frau Burger(Berger), Herr Koop(Kopp), Frau Kliefort(Kliefoth)) 
 Insgesamt gibt es 5 verschiedene Stile: Mathematisch, Sprachlich, Geselschaftswissenschaftlich, Naturwissenschaftlich und Sportlich. 
 Mit jedem Spielstil kommen Vor- und Nachteile zum Beispiel bei Quests und Kämpfen. Sport --> Mathe --> Sprachen --> GeWi --> NaWi --> Sport
 
-Quests: 
-Tag 1: Bücher aus den einzelnen Fachräumen ausleihen. Sammle 7 Bücher. Diese liegen in 215 (Ethik), 401 (Kunst), 005 (Mathe), 208(Chemie), 308 (Aula)(Kolle), 113 (Deutsch), 301 (Physik). Bücher müssen im Lehrerzimmer abgegeben werden.
-Tag 2: Finde Frau Berger um deinen English Aufsatz abzugeben. Frau Berger ist momentan dabei ihre 100.000 Schritte zu sammeln und deswegen irgendwo im Schulhaus unterwegs, die Location ist zufällig durchsuche deswegen alle Räume und Flure und gebe deinen Aufsatz ab.
+QUESTS: 
+
+Tag 1: Bücher aus den einzelnen Fachräumen ausleihen. Sammle 7 Bücher. Diese liegen in 215 (Ethik), 401 (Kunst), 005 (Mathe), 208(Chemie), 308 (Aula)(Kolle), 113 (Deutsch), 301 (Physik). Bücher müssen im Lehrerzimmer abgegeben werden. 
+Du wurdest beim scrollen im Lernraum erwischt, weil du den Lehrer mit Stefan verwechselt hast. Hole dein Handy bei Herr Damny in 211 ab.
+
+Tag 2: Finde Frau Burger um deinen English Aufsatz abzugeben. Frau Burger ist momentan dabei ihre 100.000 Schritte zu sammeln und deswegen irgendwo im Schulhaus unterwegs, die Location ist zufällig durchsuche deswegen alle Räume und Flure und gebe deinen Aufsatz ab.
+Du hast Frau Kliefort nicht die Tür aufgehalten, deshalb brüllt sie dich an und beschimpft die gesamte Jugend. Doch irgendwas kommt dir komisch vor. Ah natürlich, du hast deine Jacke in Raum 209, 107, 302 oder 002 vergessen, guck nach ob duz sie findest.
+
 Tag 3: 
+
 
