@@ -9,8 +9,8 @@ public class Adventure {
     =========
     */
 
-    public void startAdventure() {
-        System.out.println("KAKA");
+    public void start() {
+        System.out.println("");
     }
 
     /* 
@@ -25,6 +25,7 @@ public class Adventure {
         
         System.out.println("Welcome to our Text Adventure KKGame from Stefan, Jurij and Mats.");
         System.out.println("Type 'help()' to see what commands you can execute.");
+        System.out.println("Type 'start()' to start the game.");
         System.out.println("Type 'exit' to quit.");
 
         while (true) {

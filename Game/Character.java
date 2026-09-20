@@ -4,20 +4,17 @@ public class Character{
     public String description;
     public String subject;
     public int health;
-    public int inventorySpace;
-    public String[] items;
     public int level;
     public String inFightWith;
     public int currentFloor;
     public int currentRoom;
 
-    public Character(String newName, String newSex, String newDescription, String newSubject, int newHealth, int newInventorySpace, int newLevel, String newInFightWith, int newCurrentRoom, int newCurrentFloor){
+    public Character(String newName, String newSex, String newDescription, String newSubject, int newHealth, int newLevel, String newInFightWith, int newCurrentRoom, int newCurrentFloor){
         name = newName;
         sex = newSex;
         description = newDescription;
         subject = newSubject;
         health = newHealth;
-        inventorySpace = newInventorySpace;
         level = newLevel;
         inFightWith = newInFightWith;
         currentRoom = newCurrentRoom;
@@ -33,8 +30,6 @@ public class Character{
     private void changeSubject(String changedSubject){ subject = changedSubject; }
 
     private void changeHealth(int changedHealth){ health = changedHealth; }
-
-    private void changeInventorySpace(int changedInventorySpace){ inventorySpace = changedInventorySpace; }
 
     private void changeLevel(int changedLevel){ level = changedLevel; }
 
@@ -154,4 +149,6 @@ public class Character{
             }
         }
     }
-}
+
+    Character player = new Character("", "", "", "", 10, 1, "", 0, 0);
+}   
