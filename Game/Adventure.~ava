@@ -10,13 +10,7 @@ public class Adventure {
     */
 
     public void start() {
-        System.out.println("fdh");
-        if 
-
-    }
-
-    public void help(){
-
+        System.out.println("");
     }
 
     /* 
@@ -100,11 +94,5 @@ public class Adventure {
         
         scanner.close();
     }
-
-    private void dialoge(String[] texts){
-        int textInt = texts.length
-
-        for (i=0; i<textInt; i++)
-    }   
 }
 
