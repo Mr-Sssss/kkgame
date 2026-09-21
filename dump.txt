@@ -92,7 +92,7 @@ Schließe Quests ab, bekämpfe die Lehrer und rette das KKG, indem du die stärk
 Insgesamt gibt es 5 verschiedene Stile: Mathematisch, Sprachlich, Geselschaftswissenschaftlich, Naturwissenschaftlich und Sportlich. 
 Mit jedem Spielstil kommen Vor- und Nachteile zum Beispiel bei Quests und Kämpfen("-->" bedeutet stärker als.). Kunst/musik --> Mathe --> Sprachen --> GeWi --> NaWi --> Kunstmusik
 
-(Bosse: Herr Lindenschein(Info), Der Löwe(Mathe (Final Boss)), Herr Damny(Nawi), HerLunke(Gewi), Frau Burger(Sprache), Frau Stockroh(Kunst/Musik))
+(Bosse: Herr Lindenschein(Info), Der Löwe(Mathe (Final Boss)), Herr Damny(Nawi), Her Lunke(Gewi), Frau Burger(Sprache), Frau Stockroh(Kunst/Musik))
 Herr Kreuter, Herr Cop, Herr Klieford
 
 QUESTS: 
