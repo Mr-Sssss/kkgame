@@ -1,36 +1,36 @@
-public static class Inventory{
-    public int weaponSpace;
-    public int itemSpace;
-    public String[] weaponSlots;
-    public String[] itemSlots;
+public class Inventory{
+    private int weaponSpace;
+    private int itemSpace;
+    private Weapon[] weaponSlots;
+    private Item[] itemSlots;
 
-    public Character(int newWeaponSpace, int newItemSpace, String[] newWeaponSlots, String[] newItemSlots){
-        weaponSpace = newWeaponSlots;
+    public Inventory(int newWeaponSpace, int newItemSpace, Weapon[] newWeaponSlots, Item[] newItemSlots){
+        weaponSpace = newWeaponSpace;
         itemSpace = newItemSpace;
         weaponSlots = newWeaponSlots;
         itemSlots = newItemSlots;
     }
 
-    private void changeDescription(String changedDescription){ description = changedDescription; }
+    public void setWeaponSpace(int changedWeaponSpace){ weaponSpace = changedWeaponSpace; }
 
-    private void changeSubject(String changedSubject){ subject = changedSubject; }
+    public void setItemSpace(int changedItemSpace){ itemSpace = changedItemSpace; }
 
-    private void changeHealth(int changedHealth){ health = changedHealth; }
+    public void setWeaponSlots(Weapon[] changedWeaponSlots){ weaponSlots = changedWeaponSlots; }
 
-    private void changeLevel(int changedLevel){ level = changedLevel; }
+    public void setItemSlots(Item[] changedItemSlots){ itemSlots = changedItemSlots; }
+
+    public int getWeaponSpace(){return weaponSpace; }
+
+    public int getItemSpace(){return itemSpace; }
+
+    public Weapon[] getWeaponSlots(){return weaponSlots; }
+
+    public Item[] getItemSlots(){return itemSlots; }
 
     public void showInv(){
 
     }
 
-    public void reSlot(String[] reslotet){
-
-    }
-
-    public void drop(){
-
-    }
-
-    Inventory inventory = new Inventory(2, 10, weaponSlots[""], itemSlots[""]);
+    Inventory inventory = new Inventory(2, 10, new Weapon[]{}, new Item[]{});
 
 }
