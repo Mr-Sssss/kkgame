@@ -1,25 +1,33 @@
 public class Teacher{
-    public String subject;
-    public int health;
-    public int level;
+    private Subject subject;
+    private int health;
+    private int level;
 
-    public Teacher(String newSubject, int newHealth, int newLevel){
+    public Teacher(Subject newSubject, int newHealth, int newLevel){
         subject = newSubject;
         health = newHealth;
         level = newLevel;
-        
+
     }
-      
-    private void changeSubject(String changedSubject) {
-        subject = changedSubject;
-    }
-    
-    private void changeHealth(int changedHealth) {
+
+    public void setSubject(Subject changedSubject) {subject = changedSubject;}
+
+    public void setHealth(int changedHealth) {
         health = changedHealth;
     }
-    
-    private void changeLevel(int changedLevel) {
+
+    public void setLevel(int changedLevel) {
         level = changedLevel;
     }
-    
-  }
+
+    public Subject getSubject() {return subject;}
+
+    public int getHealth() {
+        return health;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+}
