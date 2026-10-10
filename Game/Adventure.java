@@ -3,17 +3,22 @@ import java.util.Scanner;
 
 public class Adventure {
 
-    /* 
+    /* e
     =========
       START
     =========
     */
 
-    public void start() {
-        System.out.println("fdh");
-        if 
+    public void buildMap(){
 
     }
+
+    public void start() {
+        dialoge("BASTARD", new String[]{"Hallo", "Wie gehts"}, true, "Bist du taub?", new String[]{"EINS", "ZASI", "ksdee"}, new String[]{"jmi", "nene", "1348902"});
+
+    }
+
+
 
     public void help(){
 
@@ -101,10 +106,60 @@ public class Adventure {
         scanner.close();
     }
 
-    private void dialoge(String[] texts){
-        int textInt = texts.length
+    private void dialoge(String speaker, String[] texts, boolean isDecision, String descisionQuestion, String[] decisionText, String[] decisionMethods) {
+        Scanner scanner = new Scanner(System.in);
 
-        for (i=0; i<textInt; i++)
-    }   
+        for (int i = 0; i < texts.length; i++) {
+            System.out.println(speaker + ">" + " " + texts[i]);
+            scanner.nextLine();
+        }
+        if (isDecision) {
+
+            System.out.println(speaker + ">" + " " + descisionQuestion);
+
+            for (int i = 0; i < decisionText.length; i++) {
+                System.out.println((i + 1) + " = " + decisionText[i]);
+            }
+
+            int decision;
+
+            while (true) {
+                System.out.print("> ");
+                String input = scanner.nextLine();
+
+                try {
+                    decision = Integer.parseInt(input);
+
+                    if (decision >= 1 && decision <= decisionText.length) {
+                        break;
+                    }
+
+                    System.out.println("Please choose a Number between 1 and " + decisionText.length + ".");
+
+                } catch (NumberFormatException e) {
+                    System.out.println("Please choose a Number between 1 and " + decisionText.length + ".");
+                }
+            }
+
+            String methodName = decisionMethods[decision - 1];
+
+            try {
+                Method[] methods = Adventure.class.getDeclaredMethods();
+
+                for (Method method : methods) {
+                    if (method.getName().equals(methodName)
+                            && method.getParameterCount() == 0) {
+
+                        method.invoke(this);
+                        return;
+                    }
+                }
+
+                System.out.println("Method '" + methodName + "' not found.");
+
+            } catch (Exception e) {
+                System.out.println("Error executing this Method: " + e.getMessage());
+            }
+        }
+    }  
 }
-
