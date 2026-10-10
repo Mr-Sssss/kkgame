@@ -1,21 +1,29 @@
-public static class Student{
-    public String name;
-    public String year;
-    public String subject;
-    public String description;
+public class Student{
+    private String name;
+    private String year;
+    private Subject subject;
+    private String description;
 
-    public Student(String newName, String newYear, String newSubject, String newDescription){
+    public Student(String newName, String newYear, Subject newSubject, String newDescription){
         name = newName;
         year = newYear;
         subject = newSubject;
         description = newDescription;
     }
 
-    private void changeName (String changedName){ name = changedName;}
+    public void setName (String changedName){ name = changedName;}
 
-    private void changeYear (String changedYear){ year = changedYear;}
+    public void setYear (String changedYear){ year = changedYear;}
 
-    private void changeSubject (String changedSubject){ name = changedSubject; }
+    public void setSubject(Subject changedSubject){ subject = changedSubject; }
 
-    private void changeDescription (String changedDescription){ name = changedDescription; }
+    public void setDescription (String changedDescription){ description = changedDescription; }
+
+    public String getName (){return name;}
+
+    public String getYear (){return year;}
+
+    public Subject getSubject(){return subject; }
+
+    public String getDescription (){return description; }
 }
