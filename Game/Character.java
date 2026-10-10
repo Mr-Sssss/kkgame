@@ -1,15 +1,15 @@
 public class Character{
-    public String name;
-    public String sex;
-    public String description;
-    public String subject;
-    public int health;
-    public int level;
-    public String inFightWith;
-    public int currentFloor;
-    public int currentRoom;
+    private String name;
+    private String sex;
+    private String description;
+    private Subject subject;
+    private int health;
+    private int level;
+    private String inFightWith;
+    private int currentFloor;
+    private int currentRoom;
 
-    public Character(String newName, String newSex, String newDescription, String newSubject, int newHealth, int newLevel, String newInFightWith, int newCurrentRoom, int newCurrentFloor){
+    public Character(String newName, String newSex, String newDescription, Subject newSubject, int newHealth, int newLevel, String newInFightWith, int newCurrentRoom, int newCurrentFloor){
         name = newName;
         sex = newSex;
         description = newDescription;
@@ -21,23 +21,41 @@ public class Character{
         currentFloor = newCurrentFloor;
     }
 
-    private void changeName(String changedName){ name = changedName; }
+    public void setName(String changedName){ name = changedName; }
 
-    private void changeSex(String changedSex){ sex = changedSex; }
+    public void setSex(String changedSex){ sex = changedSex; }
 
-    private void changeDescription(String changedDescription){ description = changedDescription; }
+    public void setDescription(String changedDescription){ description = changedDescription; }
 
-    private void changeSubject(String changedSubject){ subject = changedSubject; }
+    public void setSubject(Subject changedSubject){ subject = changedSubject; }
 
-    private void changeHealth(int changedHealth){ health = changedHealth; }
+    public void setHealth(int changedHealth){ health = changedHealth; }
 
-    private void changeLevel(int changedLevel){ level = changedLevel; }
+    public void setLevel(int changedLevel){ level = changedLevel; }
 
-    private void changeInFightWith(String changedInFightWith){ inFightWith = changedInFightWith; }
+    public void setInFightWith(String changedInFightWith){ inFightWith = changedInFightWith; }
 
-    private void changeCurrentFloor(int changedCurrentFloor){ currentRoom = changedCurrentFloor; }
+    public void setCurrentFloor(int changedCurrentFloor){ currentRoom = changedCurrentFloor; }
 
-    private void changeCurrentRoom(int changedCurrentRoom){ currentRoom = changedCurrentRoom; }
+    public void setCurrentRoom(int changedCurrentRoom){ currentRoom = changedCurrentRoom; }
+
+    public String getName(){return name;}
+
+    public String getSex(){return sex; }
+
+    public String getDescription(){return description; }
+
+    public Subject getSubject(){return subject; }
+
+    public int getHealth(){return health; }
+
+    public int getLevel(){return level; }
+
+    public String getInFightWith(){return inFightWith; }
+
+    public int getCurrentFloor(){return currentRoom; }
+
+    public int getCurrentRoom(){return currentRoom; }
 
     public void use(){
 
@@ -56,8 +74,8 @@ public class Character{
             if (floor == currentFloor){
                 System.out.print("Broski du bist schon hier.");
             } else {
-                changeCurrentFloor(floor);
-                changeCurrentRoom(0);
+                setCurrentFloor(floor);
+                setCurrentRoom(0);
                 if (floor == 0){
                     System.out.print("Du bist jetzt im Erdgeschoss");
                 } else if (floor == 1){
@@ -83,53 +101,53 @@ public class Character{
         } else {
             if (currentFloor == 0){
                 if (room >= 001 || room <= 015){
-                    changeCurrentRoom(room);
+                    setCurrentRoom(room);
                 } else {
                     System.out.print("Du bist im Erdgeschoss. Du kannst du nur in Raum 001-015 gehen. Um im Raum " + String.valueOf(room) + " gehen zu können, wechsle den Flur mit moveTo(floor)");
                 }
 
             } else if (currentFloor == 1){
                 if (room >= 101 || room <= 115){
-                    changeCurrentRoom(room);
+                    setCurrentRoom(room);
                     if (room == 115){
                         if (sex == "Female"){
-                            changeCurrentRoom(room);
+                            setCurrentRoom(room);
                         } else if (sex == "Male"){
                             System.out.print("Du bist kein Mädchen du kleiner Perversling.");
-                            changeCurrentRoom(0);
+                            setCurrentRoom(0);
                         }
                     }
                 } else {
                     System.out.print("Du bist im 1. Obergeschoss. Du kannst du nur in Raum 101-115 gehen. Um im Raum " + String.valueOf(room) + " gehen zu können, wechsle den Flur mit moveTo(floor)");
                 }
-                
+
             } else if (currentFloor == 2){
                 if (room >= 201 || room <= 215){
-                    changeCurrentRoom(room);
+                    setCurrentRoom(room);
                     if (room == 215){
                         System.out.print("Bist du Gay oder so. Aber okay");
                     }
                 } else {
                     System.out.print("Du bist im 2. Obergeschoss. Du kannst du nur in Raum 201-215 gehen. Um im Raum " + String.valueOf(room) + " gehen zu können, wechsle den Flur mit moveTo(floor)");
-                    
-                    
+
+
                 }
-                
+
             } else if (currentFloor == 3){
                 if (room >= 301 || room <= 314 || room == 401){
-                    changeCurrentRoom(room);
+                    setCurrentRoom(room);
                     if (room == 314){
                         if (sex == "Male"){
-                            changeCurrentRoom(room);
+                            setCurrentRoom(room);
                         } else if (sex == "Female"){
                             System.out.print("Schwänze kannst du dir auch auf P**nhub oder so angucken");
                             System.out.print("Also bitte verpiss dich hier.");
-                            changeCurrentRoom(0);
+                            setCurrentRoom(0);
                         }
                     }
                 } else {
                     System.out.print("Du bist im 3. Obergeschoss. Du kannst du nur in Raum 301-315 und 401 gehen. Um im Raum " + String.valueOf(room) + " gehen zu können, wechsle den Flur mit moveTo(floor)");
-                }       
+                }
             } else {
                 System.out.print("Du bist jetzt im Raum" + room);
             }
@@ -137,18 +155,16 @@ public class Character{
     }
     public void exit(){
         if (currentRoom != 0){
-            changeCurrentRoom(0);
+            setCurrentRoom(0);
             if (currentRoom >= 001 || currentRoom <= 015){
-                changeCurrentFloor(0);
+                setCurrentFloor(0);
             } else if (currentRoom >= 101 || currentRoom <= 115){
-                changeCurrentFloor(1);
+                setCurrentFloor(1);
             } else if (currentRoom >= 201 || currentRoom <= 215){
-                changeCurrentFloor(2);
+                setCurrentFloor(2);
             } else if (currentRoom >= 301 || currentRoom <= 315 || currentRoom == 401){
-                changeCurrentFloor(3);
+                setCurrentFloor(3);
             }
         }
     }
-
-    Character player = new Character("", "", "", "", 10, 1, "", 0, 0);
 }   
