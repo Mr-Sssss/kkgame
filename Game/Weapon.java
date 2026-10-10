@@ -1,25 +1,34 @@
-public static class Weapon{
-    public String name;
-    public String subject;
-    public String description;
-    public String level;
-    public int damage;
+public class Weapon{
+    private String name;
+    private Subject subject;
+    private String description;
+    private int level;
+    private int damage;
 
-    public Weapon(String newName, String newSubject, String newDescription, String newLevel, int newDamage){
+    public Weapon(String newName, Subject newSubject, String newDescription, int newLevel, int newDamage){
         name = newName;
         subject = newSubject;
-        teacher = newDescription;
+        description = newDescription;
         level = newLevel;
         damage = newDamage;
     }
-    private void changeName (String changedName){ name = changedName;}
+    public void setName (String changedName){ name = changedName;}
 
-    private void changeDescription (String changedDescription){ name = changedDescription; }
+    public void setSubject (Subject changedSubject){ subject = changedSubject; }
 
-    private void changeSubject (String changedSubject){ name = changedSubject; }
+    public void setDescription (String changedDescription){ description = changedDescription; }
 
-    private void changeLevel(int changedLevel) { level = changedLevel; }
+    public void setLevel(int changedLevel) { level = changedLevel; }
 
-    private void changeDamage (String changedDamage){ year = changedDamage;}
+    public void setDamage (int changedDamage){ damage = changedDamage;}
 
+    public String getName (){return name;}
+
+    public Subject getSubject (){return subject; }
+
+    public String getDescription (){return description; }
+
+    public int getLevel() {return level; }
+
+    public int getDamage (){return damage;}
 }
