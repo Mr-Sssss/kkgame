@@ -56,11 +56,30 @@ public class Boss{
 
     public int getLevel(){return level;}
 
-    Boss derLoewe = new Boss("Der Löwe", Subject.maths, "", 1000, "Der Löwe müllt dich mit komplizierten Gleichungen und Beweisen zu, die du nicht verstehst. Dadurch wird deine Ehre als Schüler des Kollwitz-Käthe-Gymnasiums verletzt", 10, 10);
-    Boss herrDamny = new Boss("Herr Damny", Subject.science, "", 800, "", 6, 8);
-    Boss frauBurger = new Boss("Frau Burger", Subject.languages, "", 700, "", 7, 8);
-    Boss herrKreuter = new Boss("Herr Kreuter", Subject.maths, "", 600, "", 6, 5);
-    Boss herLunke = new Boss("HerLunke", Subject.social, "", 500, "", 5, 5);
-    Boss frauStockroh = new Boss("Frau Stockroh", Subject.artmusic, "", 400, "", 4, 4);
+    public int calculateBossDamage(Boss boss, Character player) {
+        double bossLevel = boss.getLevel();
+        double bossDamage = boss.getDamage();
+        double playerLevel = player.getLevel();
+
+        double playerLevelMultiplier = 1.1 - (playerLevel * 0.04);
+
+        double subjectMultiplier = getSubjectMultiplier(boss, player);
+
+        double random = 0.95 + Math.random() * 0.10;
+
+        double damage = (bossLevel * 0.8 + bossDamage * 2.0)
+                * playerLevelMultiplier
+                * subjectMultiplier
+                * random;
+
+        return (int) Math.round(damage);
+    }
+
+    public static Boss derLoewe = new Boss("Der Löwe", Subject.maths, "Der Löwe trash talks to you with complex equations and proofs you don't understand. You start to hate maths so bad, that you can't even look at a math problem without feeling nauseous.", 1500, "", 10, 10);
+    public static Boss herrDamny = new Boss("Herr Damny", Subject.science, "Herr Damny gives you work so hard that you feel like you're drowning in it. This makes you forgett your inner self.", 1300, "", 6, 8);
+    public static Boss frauBurger = new Boss("Frau Burger", Subject.languages, "Frau Burger speaks to you in a language you don't understand. From pure confusion your even forget how to speak in your native language.", 1200, "", 7, 8);
+    public static Boss herrKreuter = new Boss("Herr Kreuter", Subject.maths, "Herr Kreuter lectures you on assembly language. Youre entire concept of computeres is broken due to him.", 1100, "", 6, 5);
+    public static Boss herLunke = new Boss("HerLunke", Subject.social, "HerLunke chats with you about social issues and the world economy. This makes you broken so badly you start to gamble and lose everything.", 1000, "", 5, 5);
+    public static Boss frauStockroh = new Boss("Frau Stockroh", Subject.artmusic, "Frau Stockroh plays music so bad, that it makes your ears bleed. This makes you deaf forever.", 900, "", 4, 4);
 
 }
