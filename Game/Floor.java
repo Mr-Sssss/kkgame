@@ -18,8 +18,8 @@ public class Floor{
 
     public int getNumber(){return number;}
 
-    static Floor erdgeschoss = new Floor(0, "Im Erdgeschoss findest du Informatikräume, Klassenräume der kleinen Kiddos und Verwaltungsräume.");
-    static Floor eins = new Floor(1, "Hier sind meistens ganz normale Räume. Am häufigsten findest du hier Sprach- und Gewilehrer");
-    static Floor zwei = new Floor(2, "Hier sind fast nur Fachräume der Naturwissenschafft, aber auch normale Räume");
-    static Floor drei = new Floor(3, "Hier sind Nawi-Räume auf der einen und Musik/Kunst-Räume auf der anderen Seite. Hier ist auch die Aula und das Kunst-Atelier");
+    public static Floor nul = new Floor(0, "In the main floor you can find the school office, the teachers' room and the library. You can also find the stairs to the other floors here.");
+    public static Floor one = new Floor(1, "In the first floor you can find mostly normal rooms. The most common are the language and music rooms.");
+    public static Floor two = new Floor(2, "In the second floor you can find mostly subject-specific rooms, but also normal rooms.");
+    public static Floor three = new Floor(3, "In the third floor you can find Nawi-Räume on one side and Musik/Kunst-Räume on the other side. Here you can also find the Aula and the Kunst-Atelier");
 }
