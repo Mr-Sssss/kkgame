@@ -1,36 +1,34 @@
 public class Inventory{
-    private int weaponSpace;
-    private int itemSpace;
     private Weapon[] weaponSlots;
-    private Item[] itemSlots;
+    private Key[] keySlots;
+    private Book[] bookSlots;
+    private Number[] numberSlots;
 
-    public Inventory(int newWeaponSpace, int newItemSpace, Weapon[] newWeaponSlots, Item[] newItemSlots){
-        weaponSpace = newWeaponSpace;
-        itemSpace = newItemSpace;
+    public Inventory(Weapon[] newWeaponSlots, Key[] newKeySlots, Book[] newBookSlots, Number[] newNumberSlots){
         weaponSlots = newWeaponSlots;
-        itemSlots = newItemSlots;
+        keySlots = newKeySlots;
+        bookSlots = newBookSlots;
+        numberSlots = newNumberSlots;
     }
-
-    public void setWeaponSpace(int changedWeaponSpace){ weaponSpace = changedWeaponSpace; }
-
-    public void setItemSpace(int changedItemSpace){ itemSpace = changedItemSpace; }
 
     public void setWeaponSlots(Weapon[] changedWeaponSlots){ weaponSlots = changedWeaponSlots; }
 
-    public void setItemSlots(Item[] changedItemSlots){ itemSlots = changedItemSlots; }
+    public void setKeySlots(Key[] changedKeySlots){ keySlots = changedKeySlots; }
 
-    public int getWeaponSpace(){return weaponSpace; }
+    public void setBookSlots(Book[] changedBookSlots){ bookSlots = changedBookSlots; }
 
-    public int getItemSpace(){return itemSpace; }
+    public void setNumberSlots(Number[] changedNumberSlots){ numberSlots = changedNumberSlots; }
 
     public Weapon[] getWeaponSlots(){return weaponSlots; }
 
-    public Item[] getItemSlots(){return itemSlots; }
+    public Key[] getKeySlots(){return keySlots; }
+
+    public Book[] getBookSlots(){return bookSlots; }
+
+    public Number[] getNumberSlots(){return numberSlots; }
 
     public void showInv(){
 
     }
-
-    Inventory inventory = new Inventory(2, 10, new Weapon[]{}, new Item[]{});
 
 }
