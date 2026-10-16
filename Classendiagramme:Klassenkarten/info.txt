@@ -1,0 +1,3 @@
+  ~  --> package
+  {static} --> static attribute / method
+  {final} --> final attribute (cannot be changed after it is set)

@@ -1,0 +1,9 @@
+Dieses Projekt wurde zum Großteil von uns(Stefan, Mats, Jurij) erstellt und zum Teil mit Hilfe von KI entwickelt. 
+
+Die Idee, die Story, die Mechanichs, die gesamten Kampf-, Open-World- oder Lootsysteme und alle Quests wurden alle von uns selber ausgedacht und erfunden. Das Tutorial, die gesamten Objektdiesigns, das Open-World und Map System, die Statsmethods und die Grundstruktur wurden von uns selber Programmiert. Das Kampfsystem wurde zum Teil von uns und zum Teil mit Hilfe von Ki programmiert. 
+
+Das Lootingsystem und die Quests wurden komplett von KI programmiert und von uns leicht überarbeitet. Die KI hat auch zusätzlich jegliche Rechtschreibfehler in den System.out.println(...) Outputs korrigiert. 
+
+Der Quellcode wurde von uns kommentiert.
+
+Das Klassendiagramme und die Klassenkarten wurden auch alle von uns selber geschrieben. Die KI hat mitgeholfen bei der Aufzählung von den gesamten Objekten und gettern/settern (z.B. die gesamten Room-Objecte oder die getter/setter in der Character Class).
